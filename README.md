@@ -35,7 +35,9 @@ npm install
 ### Create a .env file in the root folder with the following variables:
 
 PORT=5000
+
 JWTSECRET=your_jwt_secret_here
+
 MONGODB_URI=your_mongodb_connection_string_here
 
 ### Running the project locally
