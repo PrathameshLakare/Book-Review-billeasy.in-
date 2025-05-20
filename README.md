@@ -140,3 +140,33 @@ This contains all the API routes for quick reference and importing into Postman 
 
 **DELETE** `/reviews/:id`  
 **Headers:** `Authorization: Bearer <JWT_TOKEN>`
+
+## Database Schema
+
+### User
+
+userName (string, unique)
+
+password (hashed string)
+
+### Book
+
+bookName (string)
+
+bookDetails (string)
+
+author (string)
+
+genre (string)
+
+postedBy (reference to User)
+
+### Review
+
+bookId (reference to Book)
+
+userId (reference to User)
+
+rating (number)
+
+comment (string)
